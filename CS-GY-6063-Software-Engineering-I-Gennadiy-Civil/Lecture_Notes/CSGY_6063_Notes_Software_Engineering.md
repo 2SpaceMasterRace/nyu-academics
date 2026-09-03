@@ -18,11 +18,11 @@ Learn how to conceptualize, build, deploy, maintain and re-factor software in so
 4. After midterm, it's be more like labs where you just showcase what you've done and there will be free-form discussions.
 5. Whole class is in python. Your team depends on you and you need to depend on the team.
 
-# Teams 
+## Teams 
 1. Every team does a 20 minute meeting, fill out report after each meeting.
 2. Team of 5 present incremental progress with each spring goal.
 
-# Grading
+## Grading
 >[!WARNING]
 > Negative 360 eval reviews is the root of all evil. Play well with others, and make sure you end up with an A
 1. 50% - project is complete, deployed and accessible over the internet, compiles with established code style, and has a robust test suite with 85% coverage.
@@ -30,14 +30,14 @@ Learn how to conceptualize, build, deploy, maintain and re-factor software in so
 3. 10% - Individual Homework Assignments.
 4. Grades are immutable, will not be changed no matter what.
 
-# Respect 
+## Respect 
 1. Learn the right soft-skills and play the game - adjust according to team's culture and size of company. Learn the process.
 2. Treat every person in the team/company as highly as the CEO itself. Make them feel important and noticed.
 
-# Async Team Matching 
+## Async Team Matching 
 1. Grouped to sit together as teams, NASA exercise as a ice-breaker and team bonding experience.
 
-# What is Software Engineering?
+## What is Software Engineering?
 1. Software Engineering is the art of compromise, i.e., doing the right trade-offs with the given constraints and resources.
 2. Programming is a tool, more of a means to an end. 
 3. Software Engineering is programming integrated over time. We build a software system and maintain it
@@ -50,7 +50,7 @@ Learn how to conceptualize, build, deploy, maintain and re-factor software in so
 10. Really cool quote from Norman Ralph Augustine - *Software is like entropy. It is difficult to grasp, weighs nothing, and obeys the second law of thermodynamics; i.e. it always increases.*
 12. Phenomena of Induced Demand in Software. Consider the The Highway Problem or The Washing Machine Paradox(re:The Cowan Paradox) to understand deeper.
 
-# Notes 
+## Notes 
 1. Find how other companies like Linear doesn't follow agile and just generally see while agile/scrum sucks and what are some better, more productive and sustainable working models.
 2. Read a chapter of the Google SWE book every week.
 3. Learn top-tier product management using Linear.
