@@ -1,5 +1,4 @@
-# CS-GY 9223: Data Engineering
-- [Hari Varsha V](mailto:hv2241@nyu.edu)
+# CS-GY 9223: Data Engineering - [Hari Varsha V](mailto:hv2241@nyu.edu)
 - Fall 2026
 
 ## Abstract
@@ -65,10 +64,43 @@ These are notes for NYU’s CS-GY 9223, a graduate class on Data Engineering, as
 4. Spatial - data can be shown in a map.
 5. quantitative implies nominal which implies ordinal. 
 
-
-
-
-
 ## Notes 
 1. Probably should start system level web development once I'm done with rust.
 2. Go over beautiful Information visualization reddit channel.
+
+# September 11, 2026
+
+## Introduction 
+1. Prof's background, research, and anecdotes on working in Bell Labs and other parts of life. 
+2. HW - 35%, Final Project instead of exam - 40%, Labs + Quizzes - 20%, Class Participation - 5%.
+3. Use NYU VPN to access papers from the NYU network.
+4. Will be using JupyterHub and Dataproc.
+
+## Data Engineering
+1. DE - Practice of designing, building, and maintaining the systems that collect, store, and process raw data. 
+2. Core Concepts, not written in stone, more like what the industry influenced: data ingestion, processing/transformation, storage, orchestration, monitoring + quality control 
+3. Idealized Data Science: Dataset -> Train Model -> Predictions 
+4. The above doesn't say the real story, read data is really messy and need to be worked on. Most of the time is gone for plumbing.
+
+## Why Data Engineering
+1. Helps you be a better data scientist. More open roles. Don't fall for hypes just yet.
+2. You'll be learning modelling and quering data, the usual sql stuff. Especially, how to work with real world messy data for your real use-cases. 
+3. Have pipelines to work with data like data warehouses and spark. Get an understanding of distributed computing.
+4. Data Preparation: Techniques to gain insight from the data.
+5. More specific topics and emerging trends relevant to data engineering.
+6. Focus on the principles and algorithmic solutions for the problems. Think about efficient and performant every single time.
+7. The goal is to learn the material.
+
+## Data Driven Exploration 
+1. Every domain has moved towards data driven exploration, this has become the 4th paradigm of science. 
+2. Industry loves data so much it's like oil to them. Goverments use it to inform policies. All thanks to compute and storage being free and data is redundant.
+3. Noble Prizes now given to computer scientists because of the insights they get from Big Data. Refer: OpenAI, Anthropic, and Deepmind scientific achievements.
+4. Real example on how DE is used to make cities better - illegal conversions in nyc. 
+5. Challenges: Data is too vast and require expertise in a wide range of topics to get the right insights. No one right path to do it.
+6. Bottleneck is people !
+7. Example on bad data visualization: McKinsey. Use proper colours.
+
+
+## Notes
+1. Content is experimental, get a crash course on DBs from UCB and CMU.
+
