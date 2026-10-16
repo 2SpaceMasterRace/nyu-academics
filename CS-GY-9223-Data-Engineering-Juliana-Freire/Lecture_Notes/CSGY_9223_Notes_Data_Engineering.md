@@ -104,3 +104,55 @@ These are notes for NYU’s CS-GY 9223, a graduate class on Data Engineering, as
 ## Notes
 1. Content is experimental, get a crash course on DBs from UCB and CMU.
 
+
+# October 16, 2026
+
+# Introduction
+1. Talk about data cleaning, quality issues, methods to detect, and how to fix it. Lab at end of lecture on NYC parking violations class.
+2. If you have junk data, you're going to have junk issues. Data cleaning is process in which identifying and detecting inaccurate data and fixing em
+
+## Data cleaning
+3. Data cleaning is a big issue (and rightly so, it's the least enjoyable part of data science)
+4. Bad data costs US $3 trillion USD/year. Right data is very important. Data quality and data inconsistency issues can cause even the mars probe to fuck up (JPL used metric, LockHeed Martin used feet,inches,pounds)
+5. Why is data cleaning hard? Need to deal with different formats, datasets from different sources from different sources (json, csv, etc)
+6. Example: CIA World Fact Book. Same data, structured in 3 different ways over the years. 
+7. Quality issues: manual entry, data from different sources. Example table, data formats, NULL representation(What do they mean? does it mean do they have spouses or is the data missing?)
+8. Databases try to fit a complex world into a simple abstraction, trying to capture the little intricies.
+
+9. Constraints are not defined or not enforced, manual data entry or result of erroneous integration.
+10. Cleaning requires domain knowledge. Data formatting in the east vs west, monetory notations, missing data encoded in different ways
+11. When you have large datasets, you have lots of data to process so it takes tons of time. You need the context behind the data and be able reverse engineer the intergrity constraints
+12. Classification of Quality Data Issues: Column/Attribute, Record, Record Type, Source
+13. Missing phone numbers, misspellings, cryptic values, misplaced values
+14. Data quality dimensions: uniqueness: Two people with almost same qualities (last name, same salary, etc.) and completeness
+15. Data cleaning: ETL uses a set of business rules to process data from several sources before centralized integration. It loads data as is and transforms it later depending on use case and analytics.
+16. People want to get insights about the data -  EDA (Exploratory Data Analysis), process of transforming, visualizing, and summarizing data.
+17. "EDA is like detective work".
+18. Cleaning is an iterative loop. Think of the purpose (what is the intended use of the data), domain knowledge(learn as much as possible about the assumptions and discern what is an error and what is not and how to fix them about the data), and attention.
+19. Cleaning methods: rule and constraint based cleaning, missing data, outlier detection, etc
+
+20. Data Profiling: Creating small but informative summaries of a database
+21. Define the constraints the hold the data like domain constraints, key constraints, referential constraints in a database. You have infer and define the constrains yourself if the dataset is not in a database. You can mine rules from the data itself through certain techniques.
+
+22. Rule based data cleaning: Pattern based rules (regex), Lookup table (US, USA are all mapped to a canonical form)
+23. Data validation: tools like great expectations, Deequ (Amazon), and TFDV (Tensorflow data validation) check declared expectations(rules) on every new batch of data (sort of like unit tests for their code)
+24. Rules based approach require domain expertise, and do not generalize
+25. Constraints: salaries are non-negative (denial constraint), zip codes are unique (expressible as functional dependancy)
+26. Constraint based cleaning: Detect violations of constraints using SQL 
+27. Principle of minimality; repair that minimally modifies the database
+28. Holistic (consider all constraints together, since fixing one violation can create another) and probabilistic cleaning(HoloClean): combine many signals. There's also this learned detection and repair from a few labeled tuples.
+29. Use Master Data (official data) to detect violations
+30. Levenshtien distance: min number of single character edits required to change one word to target word. SoundX? something that shows how to pronounce something even if the spellings differ?
+31. Value Missing: Missing Completely at Random, At Random, Not a Random.
+32. Imputation strats: calcuate the mean/median of the non-missing values in a column and replace the missing values seperately. Downside: doesn't work with strings
+33. Outliner detection: detecting values that deviate markedly from other members of the sample in which it occurs
+
+## How do we know Cleaning worked?
+34. No ground truth, so cleaning is hard.
+25. Detection (precision and recall of cells flagged as errors)
+26. Repair (precision and recall of changed cells)
+27. Say you're training a ml model, do you see improvements? then yes it worked. Though remember this can introduce bias and change the nature of the group itself
+
+
+# Notes
+1. Learn data science and benchmarking for engineers
